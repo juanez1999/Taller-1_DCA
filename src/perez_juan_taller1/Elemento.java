@@ -3,7 +3,8 @@ package perez_juan_taller1;
 import processing.core.PApplet;
 
 public abstract class Elemento {
-	
+
+// Variables que utilizaran las clases hijas para pintarse 
 	protected PApplet app;
 	protected int x,y, tam;
 	protected int color;
@@ -16,6 +17,8 @@ public abstract class Elemento {
 	
 	public abstract void pintar();
 
+	
+// Gets and sets para pedir la posicion en x y y, tam y editarlas
 	public int getX() {
 		return x;
 	}

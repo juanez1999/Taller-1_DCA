@@ -5,18 +5,18 @@ import processing.core.PConstants;
 
 public class Corona extends Elemento {
 
+//Defino los valores de las variables que heredo la clase
 	public Corona(PApplet app, int x, int y) {
 		super(app);
 		this.x=x;
 		this.y=y;
 		tam=20;
 	}
+	
 
-
+// Pinto lo necesario para representar la clase con figuras geometricas
 	@Override
 	public void pintar() {
-		
-	
 		app.fill(35, 50, 40);
 		app.rectMode(app.CENTER);
 		app.triangle(x-40, y-10, x+20, y-20, x-40, y-10);

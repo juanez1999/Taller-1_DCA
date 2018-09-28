@@ -4,6 +4,7 @@ import processing.core.PApplet;
 
 public class Estrellas extends Elemento {
 
+//Defino los valores de las variables que heredo la clase
 	public Estrellas(PApplet app, int x, int y) {
 		super(app);
 		this.x=x;
@@ -11,7 +12,7 @@ public class Estrellas extends Elemento {
 		tam=10;
 	}
 
-
+// Pinto lo necesario para representar la clase con figuras geometricas
 	@Override
 	public void pintar() {
 		app.fill(360);

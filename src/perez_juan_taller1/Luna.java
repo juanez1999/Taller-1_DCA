@@ -3,9 +3,11 @@ package perez_juan_taller1;
 import processing.core.PApplet;
 
 public class Luna extends Elemento {
-
+	
+//Variables que utilizo para editar los elementos que pinto de esta clase cuando la llamo para pintarse
 	private float stroke;
-
+	
+//Defino los valores de las variables que heredo la clase
 	public Luna(PApplet app, int x, int y) {
 		super(app);
 		this.x=x;
@@ -15,6 +17,7 @@ public class Luna extends Elemento {
 		stroke = 0;
 	}
 	
+//Pido el getStroke y setStroke para modificar luego el stroke en el metodo en que utilizo esta clase	
 	public float getStroke() {
 		return stroke;
 	}
@@ -22,7 +25,8 @@ public class Luna extends Elemento {
 	public void setStroke(float stroke) {
 		this.stroke = stroke;
 	}
-
+	
+// Pinto lo necesario para representar la clase con figuras geometricas
 	public void pintar() {
 		app.fill(360);
 		app.strokeWeight(stroke);
